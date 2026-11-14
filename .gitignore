@@ -1,0 +1,10 @@
+target/
+.idea/
+*.iml
+*.class
+db.properties
+.env
+document-storage/
+.DS_Store
+Thumbs.db
+desktop.ini

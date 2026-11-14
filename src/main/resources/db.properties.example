@@ -1,0 +1,21 @@
+# DVMS Database Configuration Template
+# Copy this file to 'db.properties' in the project root directory and customize.
+# Do NOT commit db.properties with real passwords to version control.
+
+# Option 1: Direct JDBC URL and Credentials
+db.url=jdbc:mysql://localhost:3306/document_version_management
+db.username=YOUR_MYSQL_USERNAME
+db.password=YOUR_MYSQL_PASSWORD
+
+# Option 2: Environment Variables / JVM System Properties
+# If db.properties is omitted or has empty fields, the application reads:
+#   DB_HOST (default: localhost)
+#   DB_PORT (default: 3306)
+#   DB_NAME (e.g. document_version_management)
+#   DB_USER (e.g. root or dvms_app)
+#   DB_PASSWORD (your MySQL password)
+#
+# Example (PowerShell):
+#   $env:DB_HOST="localhost"; $env:DB_PORT="3306"; $env:DB_NAME="document_version_management"; $env:DB_USER="root"; $env:DB_PASSWORD="your_password"
+# Example (Bash):
+#   export DB_HOST=localhost DB_PORT=3306 DB_NAME=document_version_management DB_USER=root DB_PASSWORD=your_password
